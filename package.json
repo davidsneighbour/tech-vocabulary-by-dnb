@@ -1,0 +1,19 @@
+{
+  "name": "techtranslationsbydnb",
+  "version": "0.0.1",
+  "description": "A little script to create social media cards for #TechTranslationsByDNB posts.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Patrick Kollitsch <davidsneighbourdev+gh@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "toml": "3.0.0",
+    "tsx": "^4.19.0"
+  },
+  "scripts": {
+    "render": "tsx render.ts",
+    "render:cards": "tsx render.ts",
+    "render:one": "tsx render.ts --index"
+  }
+}

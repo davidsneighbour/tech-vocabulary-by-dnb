@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img"
+	aria-labelledby="title desc">
+	<title id="title">TechTranslationsByDNB - {phrase}</title>
+	<desc id="desc">A dictionary style card showing a phrase and its translation by DNB.</desc>
+	<style>
+		:root {
+			--bg: {theme_bg};
+			--ink: {theme_ink};
+			--muted: {theme_muted};
+			--accent: {theme_accent};
+			--rule: {theme_rule};
+			--brand-font: {brand_font};
+			--body-font: {body_font};
+			--mono-font: {mono_font};
+		}
+		.card {
+			fill: var(--bg);
+		}
+		.rule {
+			stroke: var(--rule);
+			stroke-width: 1;
+		}
+		.brand {
+			font: 400 28px var(--brand-font);
+			fill: var(--ink);
+		}
+		.hashtag {
+			font: 500 20px var(--body-font);
+			fill: var(--muted);
+		}
+		.headword {
+			font: 400 72px var(--brand-font);
+			fill: var(--accent);
+		}
+		.pron {
+			font: 500 24px var(--body-font);
+			fill: var(--muted);
+		}
+		.pos {
+			font: 700 22px var(--body-font);
+			fill: var(--accent);
+			text-transform: lowercase;
+		}
+
+		.label {
+			font: 600 20px var(--body-font);
+			fill: var(--muted);
+		}
+		.def {
+			font: 500 30px var(--body-font);
+			fill: var(--ink);
+			line-height: 1.35;
+		}
+		.example {
+			font: 500 24px var(--body-font);
+			fill: var(--muted);
+		}
+		.footer {
+			font: 600 18px var(--mono-font);
+			fill: var(--muted);
+			letter-spacing: 0.2px;
+		}
+		.dot {
+			fill: var(--accent);
+		}
+		.wrap {
+			white-space: pre-wrap;
+		}
+	</style>
+
+	<rect x="0" y="0" width="1200" height="630" class="card" rx="0" />
+
+	<g transform="translate(80,68)">
+
+		<text class="brand" x="0" y="0" dy="1em">TechTranslationsByDNB</text>
+		<circle class="dot" cx="355" cy="24" r="3" />
+		<text class="hashtag" x="370" y="0" dy="1.1em">#TechTranslationsByDNB</text>
+
+		<line class="rule" x1="0" y1="70" x2="1040" y2="70" />
+
+		<g transform="translate(0, 108)">
+			<text class="headword" x="0" y="0">{phrase}</text>
+			<text class="pron" x="0" y="40" dy="1.6em">{pronunciation}</text>
+			<text class="pos" x="0" y="40" dx="16" dy="1.6em">{part_of_speech}</text>
+		</g>
+
+		<g transform="translate(0, 260)">
+			<text class="label" x="0" y="0">translation</text>
+			<g transform="translate(0, 18)">
+				<text class="def wrap" x="0" y="34">
+					{translation}
+				</text>
+			</g>
+		</g>
+
+		<g transform="translate(0, 420)">
+			<text class="label" x="0" y="0">example</text>
+			<text class="example wrap" x="0" y="34">
+				{example}
+			</text>
+		</g>
+
+		<g transform="translate(0, 500)">
+			<line class="rule" x1="0" y1="0" x2="1040" y2="0" />
+			<g transform="translate(0, 24)">
+				<text class="footer" x="0" y="0">{signature}</text>
+				<text class="footer" x="0" y="28">{url}</text>
+				<text class="footer" x="700" y="0" text-anchor="end">{timestamp}</text>
+			</g>
+		</g>
+
+	</g>
+  
+</svg>

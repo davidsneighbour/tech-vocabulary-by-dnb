@@ -1,0 +1,24 @@
+[theme]
+accent = "#ff5500"
+bg = "#0f0f10"
+ink = "#f1f1f1"
+muted = "#b7b7b7"
+rule = "#262628"
+bodyFont = '''"Exo 2", sans-serif'''
+brandFont = '''"Changa One", sans-serif'''
+monoFont = '''"JetBrains Mono", monospace'''
+
+[[card]]
+example = '''You say: "Framework X is the best kept secret of Y."
+I hear: "We finally opened page one of the docs."'''
+id = "best-kept-secret"
+out = "out/tts-best-kept-secret.svg"
+part_of_speech = "idiom"
+phrase = "best kept secret of"
+pronunciation = "/bɛst kɛpt ˈsiːkrɪt ɒv/"
+signature = "Patrick Kollitsch / David's Neighbour"
+timestamp = "2025-10-16"
+translation = '''You say "A is the best kept secret of B".
+I hear "I did not read the docs. After 5 years of hacks
+I found the feature that solved my problem years ago."'''
+url = "davids-neighbour.com"
